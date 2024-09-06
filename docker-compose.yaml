@@ -15,8 +15,6 @@ services:
       dockerfile: backend.dockerfile
       args:
         - SEARXNG_API_URL=https://searxng.codifybites.com
-    depends_on:
-      - searxng
     volumes:
       - backend-dbstore:/home/perplexica/data
       - ./config.toml:/home/perplexica/config.toml
