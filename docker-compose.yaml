@@ -17,7 +17,7 @@ services:
         - SEARXNG_API_URL=https://searxng.codifybites.com
     volumes:
       - backend-dbstore:/home/perplexica/data
-      - ./config.toml:/home/perplexica/config.toml
+      - backend-dbstore/config.toml:/home/perplexica/config.toml
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     networks:
